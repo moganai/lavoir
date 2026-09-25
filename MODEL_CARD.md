@@ -20,7 +20,7 @@ tags:
 
 <p align="center">
   <a href="https://github.com/moganai/lavoir"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="https://moganai.github.io/"><img src="https://img.shields.io/badge/🌐_Blog-MoganAI-2E7D5B?style=flat-square" alt="Blog"/></a>
+  <a href="https://moganai.github.io/lavoir-web"><img src="https://img.shields.io/badge/🌐_Blog-MoganAI-2E7D5B?style=flat-square" alt="Blog"/></a>
   <a href="https://buymeacoffee.com/moganai"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=flat-square&logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"/></a>
 </p>
 
