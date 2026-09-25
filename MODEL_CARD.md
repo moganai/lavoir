@@ -21,6 +21,8 @@ tags:
 <p align="center">
   <a href="https://github.com/moganai/lavoir"><img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
   <a href="https://moganai.github.io/lavoir-web"><img src="https://img.shields.io/badge/🌐_Blog-MoganAI-2E7D5B?style=flat-square" alt="Blog"/></a>
+  <a href="https://huggingface.co/datasets/moganai/lavoir-dialogues"><img src="https://img.shields.io/badge/🤗_Dataset-lavoir--dialogues-FFD21E?style=flat-square" alt="Dataset"/></a>
+  <a href="https://huggingface.co/moganai/lavoir-tr"><img src="https://img.shields.io/badge/🇹🇷_Turkish-Lavoir--TR-C2410C?style=flat-square" alt="Turkish model"/></a>
   <a href="https://buymeacoffee.com/moganai"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=flat-square&logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"/></a>
 </p>
 
@@ -33,6 +35,9 @@ still ask. In one forward pass it returns calibrated probabilities for the optio
 question, its **value of information (VOI)**: how much the probability of the right answer is expected to rise if
 that question is asked. One rule turns this into behaviour: ask the most valuable question while it is worth it,
 then decide or hand off to a human.
+
+A Turkish version trained on MoganBERT-TR is available as [Lavoir-TR](https://huggingface.co/moganai/lavoir-tr); the question-asking training and test data are in
+[lavoir-dialogues](https://huggingface.co/datasets/moganai/lavoir-dialogues).
 
 ```text
 customer   hi, i need help with my recent purchase. i would like a replacement for the item.
@@ -63,7 +68,7 @@ never gets asked: it cannot change the decision.
 ## Quick start
 
 ```bash
-pip install -e .   # from the Lavoir code repository (installs laya, torch, transformers)
+pip install git+https://github.com/moganai/lavoir.git   # installs laya, torch, transformers
 ```
 
 ```python
