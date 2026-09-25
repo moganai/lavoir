@@ -1,7 +1,8 @@
 ---
 language: en
 license: cc-by-nc-4.0
-base_model: answerdotai/ModernBERT-large
+datasets:
+  - moganai/lavoir-dialogues
 pipeline_tag: text-classification
 tags:
   - lavoir
