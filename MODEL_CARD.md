@@ -268,9 +268,10 @@ decisions without human review.
 The weights are released under CC BY-NC 4.0 because part of the training data is licensed for non-commercial use
 only (for example ANLI, MS MARCO and the Yelp reviews). The code is Apache-2.0.
 
-Lavoir builds on [Laya](https://github.com/NandhaKishorM/laya) (Apache-2.0): its decision head, input format and
-training loss. The encoder is fine-tuned from [ModernBERT-large](https://huggingface.co/answerdotai/ModernBERT-large)
-(Apache-2.0).
+Lavoir follows [Laya](https://github.com/NandhaKishorM/laya) (Apache-2.0) in its decision-head architecture, input
+format and training loss, but uses none of Laya's weights: the decision head and the VOI head were trained from
+scratch. The encoder was initialized from [ModernBERT-large](https://huggingface.co/answerdotai/ModernBERT-large)
+(Apache-2.0) and trained together with the heads.
 
 ## Citation
 
