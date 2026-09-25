@@ -1,0 +1,9 @@
+Lavoir
+Copyright 2026 The Lavoir authors
+
+This product includes software developed as part of Laya
+(https://github.com/NandhaKishorM/laya), licensed under the Apache License 2.0.
+Lavoir imports the `laya` package and extends its DecisionModel, sequence format and training loss.
+
+The released model is fine-tuned from ModernBERT-large
+(https://huggingface.co/answerdotai/ModernBERT-large), licensed under the Apache License 2.0.

@@ -1,0 +1,34 @@
+{
+ "name": "banking_support",
+ "setting": "the online chat of a retail bank",
+ "instruction": "Which banking team should handle this customer?",
+ "options": {
+  "cards": "card services: card payments, card limits, blocking cards, pending or disputed card charges",
+  "fraud": "fraud team: money taken without the customer's consent, scams, stolen credentials",
+  "loans": "loans and mortgages: repayments, rates and changes to an existing loan",
+  "accounts": "account services: opening and closing accounts, statements, transfers",
+  "complaints": "formal complaints: fee disputes where the customer wants compensation"
+ },
+ "slots": {
+  "issue": {
+   "description": "what kind of problem it is",
+   "question": "Could you tell me what exactly went wrong?"
+  },
+  "product": {
+   "description": "which product the issue is about",
+   "question": "Which of your products is this about: a card, a current account, a loan or a savings account?"
+  },
+  "money_gone": {
+   "description": "whether money has already left the customer's account",
+   "question": "Has any money already left your account?"
+  },
+  "compensation": {
+   "description": "whether the customer is asking for money back as compensation",
+   "question": "Are you asking us to compensate you for this?"
+  },
+  "customer_name": {
+   "description": "the customer's first name",
+   "question": "May I have your first name, please?"
+  }
+ }
+}

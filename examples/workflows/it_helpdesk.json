@@ -1,0 +1,34 @@
+{
+ "name": "it_helpdesk",
+ "setting": "the internal IT helpdesk of a mid-sized company, used by employees",
+ "instruction": "Which IT team should take this ticket?",
+ "options": {
+  "service_desk": "service desk: password resets, account lockouts, access requests",
+  "endpoint": "endpoint team: laptops, desktops, phones and their hardware or local software",
+  "network": "network team: VPN, Wi-Fi and connectivity problems",
+  "security": "security operations: phishing, malware and suspicious activity",
+  "apps": "business applications team: outages and bugs in company web applications"
+ },
+ "slots": {
+  "symptom": {
+   "description": "what the user is experiencing",
+   "question": "What exactly is happening?"
+  },
+  "device": {
+   "description": "which device or system is affected",
+   "question": "Which device or system is this on?"
+  },
+  "location": {
+   "description": "whether the user is in the office or working remotely",
+   "question": "Are you in the office or working remotely?"
+  },
+  "scope": {
+   "description": "whether only this user or the whole team is affected",
+   "question": "Is it only you, or are your colleagues affected too?"
+  },
+  "customer_name": {
+   "description": "the customer's first name",
+   "question": "May I have your first name, please?"
+  }
+ }
+}

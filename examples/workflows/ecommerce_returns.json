@@ -1,0 +1,34 @@
+{
+ "name": "ecommerce_returns",
+ "setting": "the customer service chat of an online store with a marketplace",
+ "instruction": "Which team should handle this order problem?",
+ "options": {
+  "returns_desk": "returns desk: standard returns and exchanges",
+  "refunds": "refunds team: money back for faulty or wrong deliveries",
+  "logistics": "logistics: replacements for damaged or wrong deliveries",
+  "marketplace_support": "marketplace support: orders from third-party sellers",
+  "warranty_service": "warranty service: products that stopped working after the return window"
+ },
+ "slots": {
+  "problem": {
+   "description": "what is wrong with the order",
+   "question": "What is the problem with your order?"
+  },
+  "seller": {
+   "description": "who sold the item",
+   "question": "Was the item sold by us directly or by a seller on our marketplace?"
+  },
+  "delivery_age": {
+   "description": "how long ago the item was delivered",
+   "question": "When was it delivered: within the last 30 days or earlier?"
+  },
+  "wants": {
+   "description": "what the customer would like",
+   "question": "Would you prefer a replacement or your money back?"
+  },
+  "customer_name": {
+   "description": "the customer's first name",
+   "question": "May I have your first name, please?"
+  }
+ }
+}
